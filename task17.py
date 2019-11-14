@@ -23,8 +23,8 @@ if privet.lower() == "hello":
                 7: 'google_moscow.txt',
                 8: 'google_sweden.txt'
                 }
-    with open(laf[vibor], "w") as filename:
-        filename.write(input("Введите вашу жалобу сюда:"+"\n"))
+    with open(laf[vibor], "a") as filename:
+        filename.write(input("Введите вашу жалобу сюда: ")+"\n")
     print(("Ваша жалоба принята."))
 else:
     print("no correct.")
